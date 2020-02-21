@@ -1,0 +1,27 @@
+.ui.menu {
+    box-shadow: none;
+    border: none;
+}
+
+nav.top-nav {
+    border-bottom: solid 1px #3f3f3f;
+}
+
+nav.top-nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav.top-nav ul li {
+    height: 100%;
+    border-right: solid 1px grey;
+    border-right: solid 1px grey;
+}
+
+nav.top-nav ul li a {
+    color: black;
+}

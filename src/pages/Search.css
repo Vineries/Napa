@@ -1,0 +1,109 @@
+.winery-search {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.winery-search-div {
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+}
+
+.winery-search-nav {
+    height: 50px;
+}
+
+.winery-search-inner {
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 'filterbar filterbar' 'results map';
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 50px auto;
+    flex: 1;
+}
+
+.winery-search-inner input[type=text] {
+    border-radius: 0px!important;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+.winery-search-inner::-webkit-scrollbar {
+    display: none;
+}
+
+.winery-search-left {
+    overflow-y: scroll;
+    padding: 50px;
+    flex-shrink: 1;
+}
+
+.winery-search-right {
+    position: relative;
+}
+
+div.winery-search-right {
+    grid-area: map;
+    flex-shrink: 1;
+}
+
+div.winery-search-left {
+    grid-area: results;
+}
+
+.middle-loader {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-items: center;
+    flex-direction: row;
+    background-color: #fefefe;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.inner-loader {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+}
+
+.desktop-hidden {
+    display: none !important;
+}
+
+.mobile-hidden {
+    display: initial !important;
+}
+
+@media only screen and (max-width: 640px) {
+    .desktop-hidden {
+        display: initial !important;
+    }
+    .mobile-hidden {
+        display: none !important;
+    }
+    .winery-search-inner {
+        overflow: hidden;
+        display: grid;
+        grid-template-areas: 'filterbar filterbar' 'results results';
+        grid-template-columns: 100%;
+        grid-template-rows: 50px auto;
+        flex: 1;
+    }
+    .winery-search-inner.map {
+        overflow: hidden;
+        display: grid;
+        grid-template-areas: 'filterbar filterbar' 'map map';
+        grid-template-columns: 100%;
+        grid-template-rows: 50px auto;
+        flex: 1;
+    }
+}

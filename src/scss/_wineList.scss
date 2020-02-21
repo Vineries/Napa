@@ -1,0 +1,22 @@
+.winery-grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    .wine {
+        display: flex;
+        flex-direction: column;
+        div.wine-img {
+            width: 100%;
+            height: 250px;
+            background-size: contain!important;
+            background-repeat: no-repeat!important;
+            background-position: center!important;
+        }
+        .wine-type {
+            text-align: center;
+            color: grey;
+        }
+        * {
+            max-width: 100%;
+        }
+    }
+}

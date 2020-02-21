@@ -1,0 +1,33 @@
+@import 'navbar';
+@import 'wineryPhotos';
+@import 'wineryListItem';
+@import 'card';
+@import 'filterBar';
+@import 'wineList';
+@import url('https://fonts.googleapis.com/css?family=Muli|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap');
+.font-multi {
+    font-family: 'Muli', sans-serif!important;
+}
+
+.font-open-sans {
+    font-family: 'Open Sans', sans-serif!important;
+}
+
+.react-datepicker-wrapper,
+.react-datepicker__input-container {
+    width: 100%;
+}
+
+.masthead {
+    height: 500px !important;
+    background-size: 100% !important;
+    background-position: center !important;
+}
+
+@media only screen and (max-width: 640px) {
+    .masthead {
+        height: 250px !important;
+        background-size: cover;
+    }
+}

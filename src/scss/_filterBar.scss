@@ -1,0 +1,36 @@
+.filter-bar {
+    grid-area: filterbar;
+    height: 50px;
+    border-bottom: 1px solid #EBEBEB;
+    border-top: 1px solid #EBEBEB;
+    padding: 5px;
+    .fields {
+        margin: 0!important;
+        .field {
+            padding-left: 0!important;
+        }
+    }
+    .ui.button {
+        padding: 7px 25px;
+        background: none;
+        border: solid 1px rgb(165, 165, 165);
+        border-radius: 20px;
+        margin: 0 .25em 0 .25em;
+    }
+    h4 {
+        text-align: center;
+        margin: 0px 5px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.react-datepicker-wrapper,
+.react-datepicker__input-container,
+.react-datepicker-ignore-onclickoutside {
+    height: 100%;
+    margin-left: 2px;
+    input {
+        height: 100%;
+    }
+}

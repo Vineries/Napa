@@ -1,0 +1,23 @@
+.winery-list-item {
+    padding: 10px !important;
+    display: grid !important;
+    grid-template-columns: 40% 60%;
+}
+
+.winery-list-item:hover {
+    box-shadow: 1px 1px 14px -5px black !important;
+    border: solid 1px black;
+    cursor: pointer;
+}
+
+.content {
+    padding: 25px!important;
+}
+
+@media only screen and (max-width: 640px) {
+    .winery-list-item {
+        padding: 10px !important;
+        display: grid !important;
+        grid-template-columns: 40% 60%;
+    }
+}

@@ -1,0 +1,36 @@
+.jumbo.cover {
+    background: url('/images/background_main.jpg');
+    background-size: cover;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.jumbo.cover {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#EntryField {
+    left: 200px;
+    height: 400px;
+    position: relative;
+    background: #ffffff !important;
+    border-radius: 4px !important;
+    padding: 32px !important;
+    width: 441px !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25) !important;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 640px) {
+    #EntryField {
+        left: 0px;
+        right: 0px;
+        width: 80% !important;
+        margin: auto;
+    }
+}
