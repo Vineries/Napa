@@ -6,6 +6,7 @@ ENV PATH=/app/node_modules/.bin:$PATH
 ENV REACT_APP_API_URL=https://api.vineries.ca
 
 COPY package.json /app/package.json
+RUN npm config set unsafe-perm true
 RUN npm install --silent
 RUN npm install react-scripts -g --silent
 COPY . /app
